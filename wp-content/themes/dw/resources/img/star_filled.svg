@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 30 30">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#Dégradé_sans_nom_5);
+      }
+
+      .st1 {
+        fill: #fc8;
+      }
+    </style>
+    <radialGradient id="Dégradé_sans_nom_5" data-name="Dégradé sans nom 5" cx="14.53" cy="15.5" fx="14.53" fy="5.49" r="11.26" gradientUnits="userSpaceOnUse">
+      <stop offset=".14" stop-color="#fff"/>
+      <stop offset=".22" stop-color="#fffbd1"/>
+      <stop offset=".33" stop-color="#fff8a0"/>
+      <stop offset=".43" stop-color="#fff576"/>
+      <stop offset=".54" stop-color="#fff353"/>
+      <stop offset=".65" stop-color="#fff139"/>
+      <stop offset=".76" stop-color="#fff026"/>
+      <stop offset=".88" stop-color="#ffef1a"/>
+      <stop offset="1" stop-color="#ffef17"/>
+    </radialGradient>
+  </defs>
+  <polygon class="st0" points="9.64 17.7 1.23 11.67 11.58 11.6 14.72 1.74 17.98 11.56 28.33 11.5 19.99 17.63 23.25 27.46 14.84 21.43 6.5 27.56 9.64 17.7"/>
+  <path class="st1" d="M14.72,2.88l3,9.03,9.52-.06-7.67,5.64,3,9.03-7.74-5.55-7.67,5.64,2.88-9.07-7.74-5.55,9.52-.06,2.88-9.07M14.71.59l-.66,2.08-2.73,8.58-9,.06H.14s1.77,1.28,1.77,1.28l7.32,5.25-2.73,8.58-.66,2.08,1.76-1.29,7.25-5.34,7.32,5.25,1.77,1.27-.69-2.07-2.84-8.55,7.25-5.34,1.76-1.29h-2.18s-9,.07-9,.07l-2.84-8.55-.69-2.07h0Z"/>
+</svg>
