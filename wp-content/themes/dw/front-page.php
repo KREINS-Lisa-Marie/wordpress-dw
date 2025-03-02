@@ -87,8 +87,8 @@
             height: 100%;
             z-index: 1;
         }
-        .recipe__link:hover + .trip__card,
-        .recipe__link:focus + .trip__card {
+        .recipe__link:hover + .recipe__card,
+        .recipe__link:focus + .recipe__card {
             transform: translate3d(0, -4px, 0);
         }
         .recipe__card {
@@ -175,7 +175,7 @@ endwhile; else: ?>
 
 
     <section>
-        <h2>Mes voyages récents</h2>
+        <h2>Mes recettes récentes</h2>
         <div class="recipes">
             <?php
             $recipes = new WP_Query([
