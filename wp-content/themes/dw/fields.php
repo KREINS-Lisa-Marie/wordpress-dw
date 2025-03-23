@@ -1,34 +1,34 @@
 <?php
+
 add_action( 'acf/include_fields', function() {
     if ( ! function_exists( 'acf_add_local_field_group' ) ) {
         return;
     }
 
     acf_add_local_field_group( array(
-        'key' => 'group_67c40c124203c',
-        'title' => 'Recipe fields (main)',
+        'key' => 'group_67d3ecec66cff',
+        'title' => 'Navigation menu items',
         'fields' => array(
             array(
-                'key' => 'field_67c40c124541c',
-                'label' => 'Appréciation',
-                'name' => 'rating',
+                'key' => 'field_67d3ecec5c1ff',
+                'label' => 'Icone',
+                'name' => 'icon',
                 'aria-label' => '',
                 'type' => 'select',
                 'instructions' => '',
                 'required' => 1,
                 'conditional_logic' => 0,
                 'wrapper' => array(
-                    'width' => '50',
+                    'width' => '',
                     'class' => '',
                     'id' => '',
                 ),
                 'choices' => array(
-                    0 => '0 étoiles',
-                    1 => '1 étoile',
-                    2 => '2 étoiles',
-                    3 => '3 étoiles',
-                    4 => '4 étoiles',
-                    5 => '5 étoiles',
+                    'home' => 'Maison',
+                    'plane' => 'Avion',
+                    'pot' => 'Casserole',
+                    'user' => 'Personnage',
+                    'mail' => 'Enveloppe',
                 ),
                 'default_value' => false,
                 'return_format' => 'value',
@@ -39,135 +39,21 @@ add_action( 'acf/include_fields', function() {
                 'ajax' => 0,
                 'placeholder' => '',
             ),
-            array(
-                'key' => 'field_67c40c1245423',
-                'label' => 'Date de création de la recette',
-                'name' => 'creation',
-                'aria-label' => '',
-                'type' => 'date_picker',
-                'instructions' => '',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '25',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'display_format' => 'd/m/Y',
-                'return_format' => 'U',
-                'first_day' => 1,
-                'allow_in_bindings' => 0,
-            ),
-            array(
-                'key' => 'field_67c40c1245433',
-                'label' => 'Etapes de la recette',
-                'name' => 'steps',
-                'aria-label' => '',
-                'type' => 'wysiwyg',
-                'instructions' => '',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'allow_in_bindings' => 0,
-                'tabs' => 'all',
-                'toolbar' => 'full',
-                'media_upload' => 0,
-                'delay' => 0,
-            ),
         ),
         'location' => array(
             array(
                 array(
-                    'param' => 'post_type',
+                    'param' => 'nav_menu_item',
                     'operator' => '==',
-                    'value' => 'recipe',
+                    'value' => 'location/header',
                 ),
             ),
         ),
         'menu_order' => 0,
-        'position' => 'acf_after_title',
-        'style' => 'seamless',
+        'position' => 'normal',
+        'style' => 'default',
         'label_placement' => 'top',
-        'instruction_placement' => 'field',
-        'hide_on_screen' => array(
-            0 => 'the_content',
-        ),
-        'active' => true,
-        'description' => '',
-        'show_in_rest' => 0,
-    ) );
-
-    acf_add_local_field_group( array(
-        'key' => 'group_67c40cbc97526',
-        'title' => 'Recipe fields (side)',
-        'fields' => array(
-            array(
-                'key' => 'field_67c40cbc999d4',
-                'label' => 'Image sur le coté',
-                'name' => 'right_image',
-                'aria-label' => '',
-                'type' => 'image',
-                'instructions' => 'Préferez une image carrée. Un recadrage automatique aura lieu.',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'return_format' => 'id',
-                'library' => 'all',
-                'min_width' => 420,
-                'min_height' => 420,
-                'min_size' => '',
-                'max_width' => '',
-                'max_height' => '',
-                'max_size' => '',
-                'mime_types' => '',
-                'allow_in_bindings' => 0,
-                'preview_size' => 'medium',
-            ),
-            array(
-                'key' => 'field_67c40cbc999da',
-                'label' => 'Points clés',
-                'name' => 'recipe_keypoints',
-                'aria-label' => '',
-                'type' => 'wysiwyg',
-                'instructions' => '',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'allow_in_bindings' => 0,
-                'tabs' => 'visual',
-                'toolbar' => 'basic',
-                'media_upload' => 0,
-                'delay' => 0,
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'recipe',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'side',
-        'style' => 'seamless',
-        'label_placement' => 'top',
-        'instruction_placement' => 'field',
+        'instruction_placement' => 'label',
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
@@ -175,12 +61,12 @@ add_action( 'acf/include_fields', function() {
     ) );
 
     acf_add_local_field_group( array(
-        'key' => 'group_67c1774cc8534',
-        'title' => 'Travel fields (main)',
+        'key' => 'group_67c1c24dc65a6',
+        'title' => 'Trip fields (main)',
         'fields' => array(
             array(
-                'key' => 'field_67c1774c050c8',
-                'label' => 'Appréciation',
+                'key' => 'field_67c1c24d5a89f',
+                'label' => 'Appréciation du voyage',
                 'name' => 'rating',
                 'aria-label' => '',
                 'type' => 'select',
@@ -210,8 +96,8 @@ add_action( 'acf/include_fields', function() {
                 'placeholder' => '',
             ),
             array(
-                'key' => 'field_67c17942050c9',
-                'label' => 'Date de départ',
+                'key' => 'field_67c1c3fb5a8a0',
+                'label' => 'Date de début du voyage',
                 'name' => 'departure',
                 'aria-label' => '',
                 'type' => 'date_picker',
@@ -229,12 +115,12 @@ add_action( 'acf/include_fields', function() {
                 'allow_in_bindings' => 0,
             ),
             array(
-                'key' => 'field_67c179d7050ca',
-                'label' => 'Date de retour',
+                'key' => 'field_67c1c4ae5a8a1',
+                'label' => 'Date de fin du voyage',
                 'name' => 'return',
                 'aria-label' => '',
                 'type' => 'date_picker',
-                'instructions' => 'Laisser vide si vous êtes pas encore revenu.',
+                'instructions' => '',
                 'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -248,8 +134,8 @@ add_action( 'acf/include_fields', function() {
                 'allow_in_bindings' => 0,
             ),
             array(
-                'key' => 'field_67c18da533c98',
-                'label' => 'Recit de voyage',
+                'key' => 'field_67c1d5775fa19',
+                'label' => 'Récit de voyage',
                 'name' => 'story',
                 'aria-label' => '',
                 'type' => 'wysiwyg',
@@ -274,7 +160,7 @@ add_action( 'acf/include_fields', function() {
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'travel',
+                    'value' => 'trip',
                 ),
             ),
         ),
@@ -292,16 +178,16 @@ add_action( 'acf/include_fields', function() {
     ) );
 
     acf_add_local_field_group( array(
-        'key' => 'group_67c190429b8d4',
-        'title' => 'Travel fields (side)',
+        'key' => 'group_67c1d72755f71',
+        'title' => 'Trip fields (side)',
         'fields' => array(
             array(
-                'key' => 'field_67c19042974ed',
-                'label' => 'Image sur le coté',
-                'name' => 'side_image',
+                'key' => 'field_67c1d727a31b0',
+                'label' => 'Image affichée sur le côté',
+                'name' => 'side_img',
                 'aria-label' => '',
                 'type' => 'image',
-                'instructions' => 'Préferez une image carrée. Un recadrage automatique aura lieu.',
+                'instructions' => '',
                 'required' => 1,
                 'conditional_logic' => 0,
                 'wrapper' => array(
@@ -322,8 +208,8 @@ add_action( 'acf/include_fields', function() {
                 'preview_size' => 'medium',
             ),
             array(
-                'key' => 'field_67c18d3433c97',
-                'label' => 'Points clés',
+                'key' => 'field_67c1d4e45fa18',
+                'label' => 'Points-clés',
                 'name' => 'keypoints',
                 'aria-label' => '',
                 'type' => 'wysiwyg',
@@ -348,19 +234,18 @@ add_action( 'acf/include_fields', function() {
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'travel',
+                    'value' => 'trip',
                 ),
             ),
         ),
-        'menu_order' => 0,
+        'menu_order' => 100,
         'position' => 'side',
         'style' => 'seamless',
         'label_placement' => 'top',
-        'instruction_placement' => 'field',
+        'instruction_placement' => 'label',
         'hide_on_screen' => '',
         'active' => true,
         'description' => '',
         'show_in_rest' => 0,
     ) );
 } );
-
